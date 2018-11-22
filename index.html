@@ -89,6 +89,11 @@
 			function loadWorldStuff()
 			{
 				var string = ""
+				string += "<button id='mac' onclick='worldChange(2)'>Completed</button>"
+				string += "<button id='mas' onclick='worldChange(1)'>Seen</button>"
+				string += "<button id='man' onclick='worldChange(0)'>None</button>"
+				string += "<button id='mab' onclick='worldChange(3)'>Book</button>"
+				string += "<br>"
 				for(var lo = 0; lo<Uf.length; lo++)
 				{
 					string += world[lo]["Stage Name"]

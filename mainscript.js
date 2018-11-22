@@ -72,6 +72,15 @@ function extract(a)
   }
 
 }
+function worldChange(a)
+{
+  var o = [0, 1, 3, 7]
+  for(var p = 0; p<Uf.length; p++)
+  {
+    world[p]["Stage Status"] = o[a];
+    document.getElementById("stage"+(p+1)).value = world[p]["Stage Status"];
+  }
+}
 function updateAll()
 {
   getValues();
