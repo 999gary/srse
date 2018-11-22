@@ -67,6 +67,10 @@ function extract(a)
   }
 
 }
+function updateAll()
+{
+  getValues();
+}
 
 function getValues()
 {
