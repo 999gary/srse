@@ -70,6 +70,24 @@ function extract(a)
 function updateAll()
 {
   getValues();
+  for(var p = 0; p<4; p++)
+  {
+    var totalsp = (lvl-1)*2;
+    var spentsp = (metaclasses[p]["SP in LP"] + metaclasses[p]["SP in STR"] + metaclasses[p]["SP in DEX"] + metaclasses[p]["SP in MAG"]);
+    console.log(totalsp)
+    console.log(spentsp)
+    console.log(totalsp - spentsp)
+    if(spentsp != totalsp)
+    {
+      metaclasses[p]["Unspent SP"] = (totalsp - spentsp);
+      document.getElementById("s"+(p+1)+"unspentsp").value = metaclasses[p]["Unspent SP"];
+    }
+    else
+    {
+      document.getElementById("s"+(p+1)+"unspentsp").value = 0;
+    }
+  }
+
 }
 
 function getValues()
