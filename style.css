@@ -1,0 +1,770 @@
+a {
+	color: black;
+}
+
+a:hover {
+	color: #808080;
+}
+
+input[type="text"], input[type="password"], select, button, textarea {
+	border: 1px solid #A0A0A0;
+	border-radius: 3px;
+	padding: 2px;
+	margin: 2px;
+	background: white;
+}
+
+input[type="text"]:hover, input[type="text"]:focus, input[type="password"]:hover, input[type="password"]:focus, select:hover, select:focus, button:hover, button:focus, textarea:hover, textarea:focus {
+	border: 1px solid #505050;
+}
+
+input[type="text"].error, input[type="password"].error, select.error, button.error, textarea.error {
+	border: 1px solid red;
+}
+
+textarea {
+	margin: 0;
+	resize: vertical;
+}
+
+button {
+	width: 153px;
+	height: 24px;
+	text-align: left;
+}
+
+#parity input, #other input, #map input {
+	width: 30px;
+}
+
+#general input[type="text"], #s1 input[type="text"], #s2 input[type="text"], #s3 input[type="text"], #s4 input[type="text"] {
+	width: 75px;
+}
+
+option {
+	padding-left: 5px;
+}
+
+option[disabled] {
+	color: black;
+	background-color: #EAEAEA;
+}
+
+th {
+	text-align: left;
+}
+
+body {
+	text-align: center;
+	margin: 0;
+}
+
+#wrap {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #EAEAEA;
+	border: 1px solid black;
+	padding: 12px;
+}
+
+h5 {
+	margin: 0;
+}
+
+h5 span {
+	font-weight: normal;
+}
+
+.separator {
+	margin: 2px -5px;
+	border-bottom: 1px dotted #808080;
+}
+
+#gtimeline, #htimeline {
+	border-top: 1px dotted #808080;
+	border-bottom: 1px dotted #808080;
+	background-color: #FAFAFA;
+	margin: 0 -5px;
+	display: none;
+	padding: 0 5px;
+}
+
+#userinput {
+	border: 1px dotted #808080;
+	padding: 2px 5px 5px 5px;
+	margin: 0 0 5px 0;
+	background-color: #EAF4EA;
+	position: relative;
+}
+
+.right {
+	font-size: small;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+}
+
+.help {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	color: #07F;
+	background-color: white;
+	line-height: 16px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 8px;
+	text-decoration: none;
+	position: relative;
+	top: -2px;
+	margin-right: 2px;
+}
+
+.help:hover {
+	color: #07F;
+}
+
+#warning {
+	font-weight: bold;
+	color: #A00000;
+	margin-left: 20px;
+}
+
+label {
+	font-weight: bold;
+}
+
+#input {
+	width: 982px;
+	margin: 5px 0;
+}
+
+#right {
+	float: right;
+}
+
+#statusb {
+	font-weight: bold;
+	border: 1px dotted #808080;
+	padding: 2px 5px;
+	margin: 5px 0;
+	background-color: #EAEAFF;
+}
+
+#status {
+	font-weight: normal;
+}
+
+#loadingprogressb {
+	float: right;
+}
+
+#loadingprogress {
+	font-weight: normal;
+}
+
+#info {
+	border: 1px dotted #808080;
+	padding: 2px 5px;
+	margin: 5px 0;
+	background-color: #F4F4F4;
+}
+
+#info table {
+	width: 100%;
+}
+
+#info th, #info td {
+	padding-right: 10px;
+	border-bottom: 1px dotted #A0A0A0;
+}
+
+#info a.new {
+	color: #C00;
+}
+
+#info a.new:hover {
+	color: #F33;
+}
+
+#info span.new {
+	color: #0C0;
+	font-weight: bold;
+	font-style: normal;
+}
+
+#info span.change {
+	color: #00C;
+	font-weight: bold;
+	font-style: normal;
+}
+
+#info span.fix {
+	color: #C00;
+	font-weight: bold;
+	font-style: normal;
+}
+
+#info span.what {
+	color: #C0C;
+	font-weight: bold;
+	font-style: normal;
+}
+
+#info .space {
+	margin: 0 3px;
+}
+
+#output {
+	border: 1px dotted #808080;
+	padding: 2px 5px;
+	margin: 5px 0 0 0;
+	background-color: #EAEFEF;
+}
+
+#output fieldset {
+	padding: 10px;
+	margin: 0;
+	border: 1px solid black;
+}
+
+legend {
+	font-weight: bold;
+}
+
+#output label {
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+#output input[readonly] {
+	color: #909090;
+}
+
+#output fieldset table {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#output fieldset table tr td {
+	border: 1px solid black;
+}
+
+#user {
+	float: right;
+	width: 471px;
+	height: 50px;
+	margin-right: 15px !important;
+}
+
+#user input[type="button"] {
+	border: 1px solid #A0A0A0;
+	border-radius: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin: 2px;
+	background: white;
+}
+
+#user input[type="button"]:hover, #user input[type="button"]:focus {
+	border: 1px solid #505050;
+}
+
+.range {
+	display: inline-block;
+	position: relative;
+	left: 10px;
+	top: -2px;
+	height: 4px;
+	width: 870px;
+	background-color: white;
+	border: 1px solid #CACACA;
+}
+
+.range .picker {
+	position: absolute;
+	top: -9px;
+	height: 20px;
+	width: 10px;
+	border: 1px solid black;
+	background-color: #EAEAEA;
+}
+
+.clear {
+	clear: both;
+}
+
+#s1, #s2, #s3, #s4 {
+	width: 223px;
+}
+
+#s1, #s2, #s3 {
+	margin-right: 2.66px !important;
+	float: left;
+}
+
+#s1w, #s1c1, #s1c2, #s2w, #s2c1, #s2c2, #s3w, #s3c1, #s3c2, #s4w, #s4c1, #s4c2 {
+	width: 154px;
+}
+
+input.pm {
+	border: 1px solid #A0A0A0;
+	border-radius: 3px;
+	margin: 2px;
+	padding-left: 0;
+	padding-right: 0;
+	background: white;
+	width: 20px;
+	height: 20px;
+}
+
+input.pm:hover, input.pm:focus {
+	border: 1px solid #505050;
+}
+
+#inventory select {
+	width: 153px;
+}
+
+#iih {
+	border: 1px solid black;
+	padding: 1px;
+	width: 157px;
+	margin-top: 10px;
+}
+
+#map td label {
+	display: block;
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#map th label{
+	font-weight: bold !important;
+	margin: 0 5px 0 0 !important;
+}
+
+#map td label.checked {
+	background-color: #EAFFEA;
+}
+
+#map td label.unchecked {
+	background-color: #FFEAEA;
+}
+
+#map tr:hover {
+	background-color: white;
+}
+
+#map tr:hover td label.checked {
+	background-color: #F4FFF4;
+}
+
+#map tr:hover td label.unchecked {
+	background-color: #FFF4F4;
+}
+
+#map td.found {
+	width: 200px;
+}
+
+#map td.beat {
+	width: 200px;
+}
+
+#map td.book {
+	width: 200px;
+}
+
+#map td.blv {
+	padding-left: 10px;
+	width: 90px;
+}
+
+#chat {
+	border: 1px dotted #808080;
+	padding: 2px 5px;
+	margin: 5px 0 0 0;
+	background-color: #F4F4EA;
+}
+
+#chat input {
+	margin: 2px 0;
+}
+
+#text {
+	width: 982px;
+}
+
+#messagebox {
+	overflow: auto;
+	max-height: 100px;
+	word-wrap: break-word;
+}
+
+#messagebox .message {
+	padding: 2px 0;
+	border-bottom: 1px dotted #808080;
+	overflow: hidden;
+}
+
+#messagebox .message.edit:hover {
+	background-color: rgba(255, 255, 255, 128);
+}
+
+#messagebox .private {
+	font-style: italic;
+	color: #808080;
+}
+
+#messagebox .admin {
+	color: #00A0A0;
+}
+
+#messagebox .supermod {
+	color: #A00000;
+}
+
+#messagebox .mod {
+	color: #00A000;
+}
+
+#messagebox .user {
+	color: black;
+}
+
+#messagebox .banned {
+	color: #808080;
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+#messagebox .reply {
+	font-weight: bold;
+}
+
+#messagebox a {
+	text-decoration: none;
+}
+
+#messagebox a:hover .name {
+	border-color: black;
+}
+
+#messagebox .name {
+	border: 1px dashed transparent;
+}
+
+#messagebox .controlpanel {
+	float: right;
+	margin: 0 5px;
+}
+
+#messagebox .controlpanel a {
+	text-decoration: underline;
+	margin: 0 2px;
+	padding: 0 2px;
+}
+
+#messagecancel {
+	float: right;
+}
+
+#logout {
+	float: right;
+	margin-right: 10px;
+}
+
+#messagestatus {
+	font-weight: bold;
+	color: #A00000;
+}
+
+#messageframe {
+	display: none;
+}
+
+#paypal {
+	float: left;
+	margin-top: 25px;
+}
+
+#toplist {
+	float: right;
+	margin-top: 10px;
+}
+
+#reklama {
+	display: block;
+	border: 0;
+	height: 60px;
+	width: 496px;
+	overflow: hidden;
+	text-align: left;
+	margin: 10px auto 0 auto;
+}
+
+#shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 9;
+}
+
+#center {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 0;
+	width: 0;
+	z-index: 10;
+}
+
+#tutor {
+	width: 1000px;
+	height: 500px;
+	position: relative;
+	top: -250px;
+	left: -500px;
+	background-color: white;
+}
+
+#tutor h1 {
+	text-align: left;
+	margin: 0;
+	padding: 10px;
+	margin: -5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+#tutor code {
+	display: block;
+	word-wrap: break-word;
+	color: #555;
+}
+
+#tutor img {
+	margin: 10px;
+}
+
+#tutor {
+	text-align: left;
+	padding: 5px;
+}
+
+#tutor #close {
+	float: right;
+	padding: 5px 10px;
+}
+
+#tutor #navigation {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
+	padding: 5px 0;
+	margin: -5px;
+	text-align: center;
+	margin-bottom: 0;
+	border-top: 1px solid black;
+}
+
+#tutor #navigation a.dot {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-color: #DADADA;
+	border-radius: 8px;
+	margin: 0 3px;
+}
+
+#tutor #navigation a.dot:hover, #tutor #navigation a.selected {
+	background-color: #A0A0A0;
+}
+
+#tutor #navigation a.np {
+	position: relative;
+	top: -3px;
+	margin: 0 3px;
+}
+
+#errors {
+	width: 750px;
+	padding: 10px;
+	position: relative;
+	left: -375px;
+	background-color: white;
+	text-align: left;
+	top: 100px;
+}
+
+#errors h2, #errors h4 {
+	margin: 0;
+}
+
+#errors #box {
+	margin: 10px -10px;
+	padding: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+#errors #box div {
+	border-bottom: 1px dotted black;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: middle;
+}
+
+#errors button {
+	text-align: center;
+}
+
+#errors #box button {
+	width: auto;
+	line-height: normal;
+	float: right;
+}
+
+#items {
+	width: 700px;
+	height: 500px;
+	position: relative;
+	top: -250px;
+	left: -350px;
+	background-color: black;
+	border: 1px solid white;
+	overflow: hidden;
+	color: white;
+}
+
+#itemmenu {
+	border-bottom: 1px solid white;
+	height: 30px;
+	text-align: left;
+}
+
+#itemmenu div {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin: 1px;
+	border: 2px solid transparent;
+}
+
+#itemmenu div:hover {
+	background-color: #900;
+	border: 2px solid black;
+}
+
+#itemmenu div.selected {
+	border: 2px solid #900;
+}
+
+#itemmenu div#close {
+	margin: 0;
+	float: right;
+	border: 0;
+	border-left: 1px solid white;
+	display: block;
+	height: 21px;
+	width: 70px;
+	text-align: center;
+	padding-top: 9px;
+}
+
+#itemmenu div#close:hover {
+	background-color: #900;
+}
+
+#itemmenu div#close canvas, #itemmenu div#close img {
+	margin: 0 auto;
+}
+
+#itemmenu div#delete {
+	margin: 0;
+	float: right;
+	border: 0;
+	border-left: 1px solid white;
+	display: block;
+	height: 21px;
+	width: 70px;
+	text-align: center;
+	padding-top: 9px;
+}
+
+#itemmenu div#delete:hover {
+	background-color: #900;
+}
+
+#itemmenu div#delete canvas, #itemmenu div#delete img {
+	margin: 0 auto;
+}
+
+#itemlist {
+	float: left;
+	height: 469px;
+	width: 300px;
+	border-right: 1px solid white;
+	overflow-y: auto;
+}
+
+#itemlist div {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin: 1px;
+	border: 2px solid black;
+}
+
+#itemlist div:hover {
+	background-color: #900;
+}
+
+#itemlist div.selected {
+	border: 2px solid #900;
+}
+
+#itemlist canvas.header, #itemlist img.header {
+	display: block;
+	margin: 2px auto 0 auto;
+}
+
+#itemdesc {
+	float: right;
+	width: 389px;
+	text-align: left;
+	padding: 0 5px;
+}
+
+#itemdesc canvas, #itemdesc img {
+	display: block;
+	margin-top: 5px;
+}
+
+#itemdesc .hr {
+	margin: 5px -5px;
+	border-bottom: 1px solid white;
+}
+
+canvas.text {
+	display: none;
+}
+
+#preload {
+	display: none;
+}
