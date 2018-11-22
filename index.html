@@ -14,6 +14,8 @@
 			<input type="submit" value="Encode" onclick="implant()"></input>
 			<textarea id="name2"  rows="2" cols="40"></textarea>
 			<br>
+			<b>Classes.</b>
+			<br>
 			Stickman 1 Class.
 			<textarea id="s1c"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
 			Stickman 2 Class.
@@ -79,6 +81,29 @@
 			<br>
 			<br>
 			<br>
+			<b>Map.</b>
+			<br>
+			</map>
+			<div id="world"></div>
+			<script>
+			function loadWorldStuff()
+			{
+				var string = ""
+				for(var lo = 0; lo<Uf.length; lo++)
+				{
+					string += world[lo]["Stage Name"]
+					string += "<textarea id='stage"+(lo+1)+"' rows='1' cols='1'></textarea>"
+					if((lo % 6) == 0)
+					{
+						string += "<br>"
+					}
+					document.getElementById("world").innerHTML = string;
+				}
+			}
+			</script>
+			<br>
+			<br>
+			<br>
 			<br>
 			<br>
 			<canvas id="cv" width="512" height="384" style="display: none;"></canvas>
@@ -96,6 +121,7 @@
 			function displayItems()
 			{
 			  //console.log(document.getElementById("name").value)
+
 			  extract(document.getElementById("name").value)
 
 
