@@ -66,6 +66,9 @@ function extract(a)
     document.getElementById("s"+(p+1)+"spdex").value = metaclasses[p]["SP in DEX"];
     document.getElementById("s"+(p+1)+"spmag").value = metaclasses[p]["SP in MAG"];
     document.getElementById("s"+(p+1)+"unspentsp").value = metaclasses[p]["Unspent SP"];
+    document.getElementById("s"+(p+1)+"weapon").value = metaclasses[p]["Current Weapon ID"];
+    document.getElementById("s"+(p+1)+"compo1").value = metaclasses[p]["Compo Item 1 ID"];
+    document.getElementById("s"+(p+1)+"compo2").value = metaclasses[p]["Compo Item 2 ID"];
   }
   for( var lo = 0; lo<Uf.length; lo++ )
   {
@@ -122,6 +125,9 @@ function getValues()
     metaclasses[p]["SP in DEX"] = Number(document.getElementById("s"+(p+1)+"spdex").value)
     metaclasses[p]["SP in MAG"] = Number(document.getElementById("s"+(p+1)+"spmag").value)
     metaclasses[p]["Unspent SP"] = Number(document.getElementById("s"+(p+1)+"unspentsp").value)
+    metaclasses[p]["Current Weapon ID"] = Number(document.getElementById("s"+(p+1)+"weapon").value)
+    metaclasses[p]["Compo Item 1 ID"] = Number(document.getElementById("s"+(p+1)+"compo1").value)
+    metaclasses[p]["Compo Item 2 ID"] = Number(document.getElementById("s"+(p+1)+"compo2").value)
   }
   for( var lo = 0; lo<Uf.length; lo++ )
   {

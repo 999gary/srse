@@ -2,8 +2,9 @@
 	width: 1000px;
 	margin: auto;
 	text-align: left;
-	border: 2px solid black;
+	border: 2px dotted grey;
 	padding: 10px;
+	font-variant: small-caps;
 }
 
 
@@ -33,4 +34,18 @@ button {
 body {
 	text-align: center;
 	margin: 0;
+}
+
+fieldset {
+	border: 2px dotted black;
+}
+
+#field1, #field2, #field3 {
+	margin-right: 25px !important;
+	float:left
+}
+
+#field1, #field2, #field3, #field4 {
+	margin-top:25px;
+	width:200px;
 }

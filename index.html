@@ -10,80 +10,160 @@
 			<img src="smug.png">
 			<br>
 			<textarea id="name"  rows="2" cols="40"></textarea>
-			<input type="submit" value="Decode" onclick="loadGame(); setTimeout(displayItems, 500);"></input>
+			<input type="submit" value="Decode" onclick="loadGame(); setTimeout(displayItems, 500); setTimeout(visible, 1)"></input>
 			<input type="submit" value="Encode" onclick="implant()"></input>
 			<textarea id="name2"  rows="2" cols="40"></textarea>
 			<br>
-			<b>Classes.</b>
 			<br>
-			Stickman 1 Class.
-			<textarea id="s1c"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 2 Class.
-			<textarea id="s2c"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 3 Class.
-			<textarea id="s3c"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 4 Class.
-			<textarea id="s4c"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
 			<br>
-			Stickman 1 LP.
+			<div id="shit" style="visibility: hidden;">
+			<b>Stickmen</b>
+			<br>
+
+
+			<fieldset id="field1">
+				<legend>S t i c k m a n   1</legend>
+			Class:
+			<select id="s1c">
+				<option value="1">Boxer</option>
+				<option value="2">Gladiator</option>
+				<option value="3">Sniper</option>
+				<option value="4">Magician</option>
+				<option value="5">Priest</option>
+				<option value="6">Gunner</option>
+				<option value="7">Whipper</option>
+				<option value="8">Angel</option>
+			</select>
+			LP:
 			<textarea id="s1lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 2 LP.
-			<textarea id="s2lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 3 LP.
-			<textarea id="s3lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 4 LP.
-			<textarea id="s4lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			<br>
-			Stickman 1 SP in LP.
+			SP in LP:
 			<textarea id="s1splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 2 SP in LP.
-			<textarea id="s2splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 3 SP in LP.
-			<textarea id="s3splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 4 SP in LP.
-			<textarea id="s4splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			<br>
-			Stickman 1 SP in STR.
+			SP in STR:
 			<textarea id="s1spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 2 SP in STR.
-			<textarea id="s2spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 3 SP in STR.
-			<textarea id="s3spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 4 SP in STR.
-			<textarea id="s4spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			<br>
-			Stickman 1 SP in DEX.
+			SP in DEX:
 			<textarea id="s1spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 2 SP in DEX.
-			<textarea id="s2spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 3 SP in DEX.
-			<textarea id="s3spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 4 SP in DEX.
-			<textarea id="s4spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			<br>
-			Stickman 1 SP in MAG.
+			SP in MAG:
 			<textarea id="s1spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 2 SP in MAG.
-			<textarea id="s2spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 3 SP in MAG.
-			<textarea id="s3spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			Stickman 4 SP in MAG.
-			<textarea id="s4spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
-			<br>
-			Stickman 1 Unspent SP.
+			Unspent SP:
 			<textarea id="s1unspentsp"  rows="1" cols="1"readonly></textarea>
-			Stickman 2 Unspent SP.
+			weapon
+			<textarea id="s1weapon" rows="1" cols="1"></textarea>
+			compo1
+			<textarea id="s1compo1" rows="1" cols="1"></textarea>
+			compo2
+			<textarea id="s1compo2" rows="1" cols="1"></textarea>
+			</fieldset>
+
+
+			<fieldset id="field2">
+				<legend>S t i c k m a n   2</legend>
+			Class:
+			<select id="s2c">
+				<option value="1">Boxer</option>
+				<option value="2">Gladiator</option>
+				<option value="3">Sniper</option>
+				<option value="4">Magician</option>
+				<option value="5">Priest</option>
+				<option value="6">Gunner</option>
+				<option value="7">Whipper</option>
+				<option value="8">Angel</option>
+			</select>
+			LP:
+			<textarea id="s2lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in LP:
+			<textarea id="s2splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in STR:
+			<textarea id="s2spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in DEX:
+			<textarea id="s2spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in MAG:
+			<textarea id="s2spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			Unspent SP:
 			<textarea id="s2unspentsp"  rows="1" cols="1"readonly></textarea>
-			Stickman 3 Unspent SP.
+			weapon
+			<textarea id="s2weapon" rows="1" cols="1"></textarea>
+			compo1
+			<textarea id="s2compo1" rows="1" cols="1"></textarea>
+			compo2
+			<textarea id="s2compo2" rows="1" cols="1"></textarea>
+			</fieldset>
+
+
+			<fieldset id="field3">
+				<legend>S t i c k m a n   3</legend>
+			Class:
+			<select id="s3c">
+				<option value="1">Boxer</option>
+				<option value="2">Gladiator</option>
+				<option value="3">Sniper</option>
+				<option value="4">Magician</option>
+				<option value="5">Priest</option>
+				<option value="6">Gunner</option>
+				<option value="7">Whipper</option>
+				<option value="8">Angel</option>
+			</select>
+			LP:
+			<textarea id="s3lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in LP:
+			<textarea id="s3splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in STR:
+			<textarea id="s3spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in DEX:
+			<textarea id="s3spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in MAG:
+			<textarea id="s3spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			Unspent SP:
 			<textarea id="s3unspentsp"  rows="1" cols="1"readonly></textarea>
-			Stickman 4 Unspent SP.
+			weapon
+			<textarea id="s3weapon" rows="1" cols="1"></textarea>
+			compo1
+			<textarea id="s3compo1" rows="1" cols="1"></textarea>
+			compo2
+			<textarea id="s3compo2" rows="1" cols="1"></textarea>
+			</fieldset>
+
+
+			<fieldset id="field4">
+				<legend>S t i c k m a n   4</legend>
+			Class:
+			<select id="s4c">
+				<option value="1">Boxer</option>
+				<option value="2">Gladiator</option>
+				<option value="3">Sniper</option>
+				<option value="4">Magician</option>
+				<option value="5">Priest</option>
+				<option value="6">Gunner</option>
+				<option value="7">Whipper</option>
+				<option value="8">Angel</option>
+			</select>
+			LP:
+			<textarea id="s4lp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in LP:
+			<textarea id="s4splp"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in STR:
+			<textarea id="s4spstr"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in DEX:
+			<textarea id="s4spdex"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			SP in MAG:
+			<textarea id="s4spmag"  rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			Unspent SP:
 			<textarea id="s4unspentsp"  rows="1" cols="1"readonly></textarea>
+			weapon
+			<textarea id="s4weapon" rows="1" cols="1"></textarea>
+			compo1
+			<textarea id="s4compo1" rows="1" cols="1"></textarea>
+			compo2
+			<textarea id="s4compo2" rows="1" cols="1"></textarea>
+			</fieldset>
+
+
 			<br>
 			<br>
 			<br>
 			<br>
 			<b>One off</b>
 			<br>
+			<fieldset>
 			Level
 			<textarea id="lvl" rows="1" cols="1" onfocusout="updateAll();"></textarea>
 			Current Location
@@ -92,6 +172,7 @@
 			<textarea id="gold" rows="1" cols="1" onfocusout="updateAll();"></textarea>
 			Exp
 			<textarea id="exp" rows="1" cols="1" onfocusout="updateAll();"></textarea>
+			</fieldset>
 			<br>
 			<br>
 			<br>
@@ -110,16 +191,17 @@
 			function loadWorldStuff()
 			{
 				var string = ""
-				string += "<button id='mac' onclick='worldChange(2)'>Completed</button>"
-				string += "<button id='mas' onclick='worldChange(1)'>Seen</button>"
-				string += "<button id='man' onclick='worldChange(0)'>None</button>"
-				string += "<button id='mab' onclick='worldChange(3)'>Book</button>"
+				string += "<p>Set all stages to:  </p>"
+				string += "<input type=button style='margin-left: 20px; margin-right:5px;' id='man' onclick='worldChange(0)'>Undiscovered</button>"
+				string += "<input type=button style='margin-left: 20px; margin-right:5px;' id='mas' onclick='worldChange(1)'>Seen</button>"
+				string += "<input type=button style='margin-left: 20px; margin-right:5px;' id='mac' onclick='worldChange(2)'>Completed</button>"
+				string += "<input type=button style='margin-left: 20px; margin-right:5px;' id='mab' onclick='worldChange(3)'>Book</button>"
 				string += "<br>"
 				for(var lo = 0; lo<Uf.length; lo++)
 				{
 					string += world[lo]["Stage Name"]
-					string += "<textarea id='stage"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
-					if((lo % 6) == 0)
+					string += "<textarea id='stage"+(lo+1)+"' rows='1' cols='1' style='margin-left: 5px; margin-right:20px;' onfocusout='updateAll();'></textarea>"
+					if((lo % 6) == 5)
 					{
 						string += "<br>"
 					}
@@ -135,7 +217,7 @@
 					string += "<textarea id='inv"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
 					string += "<textarea id='comp1"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
 					string += "<textarea id='comp2"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
-					if((lo % 3) == 0)
+					if((lo % 3) == 2)
 					{
 						string += "<br>"
 					}
@@ -143,6 +225,7 @@
 				document.getElementById("inventory").innerHTML = string;
 			}
 			</script>
+			</div>
 			<br>
 			<br>
 			<br>
@@ -159,6 +242,10 @@
 			function loadGame()
 			{
 			  GameLoad(document.getElementById("name").value)
+			}
+
+			function visible() {
+				document.getElementById("shit").style.visibility= "visible";
 			}
 			function displayItems()
 			{
