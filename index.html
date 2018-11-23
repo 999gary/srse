@@ -98,8 +98,14 @@
 			<br>
 			<b>Map.</b>
 			<br>
-			</map>
 			<div id="world"></div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<b>Inventory</b>
+			<br>
+			<div id="inventory"></div>
 			<script>
 			function loadWorldStuff()
 			{
@@ -112,13 +118,29 @@
 				for(var lo = 0; lo<Uf.length; lo++)
 				{
 					string += world[lo]["Stage Name"]
-					string += "<textarea id='stage"+(lo+1)+"' rows='1' cols='1'></textarea>"
+					string += "<textarea id='stage"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
 					if((lo % 6) == 0)
 					{
 						string += "<br>"
 					}
 					document.getElementById("world").innerHTML = string;
 				}
+			}
+			function loadInventoryStuff()
+			{
+				var string = "";
+				for(var lo = 0; lo<24; lo++)
+				{
+					string += (lo+1)
+					string += "<textarea id='inv"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
+					string += "<textarea id='comp1"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
+					string += "<textarea id='comp2"+(lo+1)+"' rows='1' cols='1' onfocusout='updateAll();'></textarea>"
+					if((lo % 3) == 0)
+					{
+						string += "<br>"
+					}
+				}
+				document.getElementById("inventory").innerHTML = string;
 			}
 			</script>
 			<br>

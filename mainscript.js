@@ -56,6 +56,7 @@ function extract(a)
   console.log(metaclasses)
   console.log(inventory)
   loadWorldStuff();
+  loadInventoryStuff();
   for(var p = 0; p<4; p++)
   {
     document.getElementById("s"+(p+1)+"c").value = metaclasses[p]["ID"];
@@ -69,6 +70,12 @@ function extract(a)
   for( var lo = 0; lo<Uf.length; lo++ )
   {
     document.getElementById("stage"+(lo+1)).value = world[lo]["Stage Status"];
+  }
+  for( var jo = 0; jo<24; jo++ )
+  {
+    document.getElementById("inv"+(jo+1)).value = inventory[jo]["Item ID"];
+    document.getElementById("comp1"+(jo+1)).value = inventory[jo]["Compo 1 ID"];
+    document.getElementById("comp2"+(jo+1)).value = inventory[jo]["Compo 2 ID"];
   }
   document.getElementById("lvl").value = lvl
   document.getElementById("cloc").value = cloc
@@ -119,6 +126,12 @@ function getValues()
   for( var lo = 0; lo<Uf.length; lo++ )
   {
     world[lo]["Stage Status"] = Number(document.getElementById("stage"+(lo+1)).value);
+  }
+  for( var jo = 0; jo<24; jo++ )
+  {
+    inventory[jo]["Item ID"] = Number(document.getElementById("inv"+(jo+1)).value);
+    inventory[jo]["Compo 1 ID"] = Number(document.getElementById("comp1"+(jo+1)).value);
+    inventory[jo]["Compo 2 ID"] = Number(document.getElementById("comp2"+(jo+1)).value);
   }
   lvl = Number(document.getElementById("lvl").value)
   cloc = Number(document.getElementById("cloc").value)
