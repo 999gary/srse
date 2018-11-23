@@ -70,7 +70,10 @@ function extract(a)
   {
     document.getElementById("stage"+(lo+1)).value = world[lo]["Stage Status"];
   }
-
+  document.getElementById("lvl").value = lvl
+  document.getElementById("cloc").value = cloc
+  document.getElementById("gold").value = gold
+  document.getElementById("exp").value = exp
 }
 function worldChange(a)
 {
@@ -117,6 +120,10 @@ function getValues()
   {
     world[lo]["Stage Status"] = Number(document.getElementById("stage"+(lo+1)).value);
   }
+  lvl = Number(document.getElementById("lvl").value)
+  cloc = Number(document.getElementById("cloc").value)
+  gold = Number(document.getElementById("gold").value)
+  exp = Number(document.getElementById("exp").value)
 }
 
 function implant()
